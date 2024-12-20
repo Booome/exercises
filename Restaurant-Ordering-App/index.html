@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Roboto:wght@300;400;900&family=Smythe&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1>Jimmy's Diner</h1>
+                <h2>The best burgers and pizzas in town</h2>
+            </header>
+
+            <div class="body-container">
+                <section class="menu-container"></section>
+                <div class="thans-for-order">HHHH</div>
+                <section class="order-container">
+                    <div class="order-title">Your Order</div>
+                    <div class="order-list-lines"></div>
+                    <div class="order-line">
+                        <span class="order-label">Total price:</span>
+                        <span class="order-price total-price">$0</span>
+                    </div>
+                    <button class="order-btn">Complete Order</button>
+                </section>
+            </div>
+
+            <form class="payment-modal">
+                <p class="payment-modal-title">Enter card details</p>
+
+                <input
+                    class="payment-modal-input payment-modal-input-name"
+                    type="text"
+                    placeholder="Enter your name"
+                    required
+                />
+                <input
+                    class="payment-modal-input payment-modal-input-card-number"
+                    type="text"
+                    placeholder="Enter card number"
+                    required
+                />
+                <input
+                    class="payment-modal-input payment-modal-input-cvv"
+                    type="text"
+                    placeholder="Enter CVV"
+                    required
+                />
+
+                <button type="submit" class="payment-modal-button">Pay</button>
+            </form>
+        </div>
+
+        <script src="index.js" type="module"></script>
+    </body>
+</html>
