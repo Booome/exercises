@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page-x-padding {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.bold {
+    font-weight: 900;
+}
+
+.hidden {
+    display: none;
+}
+
+.absolute {
+    position: absolute;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans 3", serif;
+}
+
+.body-container {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    position: relative;
+    background-color: rgb(255, 238, 238);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    background: #fffa;
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+main {
+    padding-bottom: 2.125em;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #202020;
+    font-size: 0.75rem;
+    height: 8.75em;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem;
+    font-family: "Roboto", serif;
+    font-weight: 900;
+}
+
+.logo img {
+    width: 24px;
+    height: 24px;
+    margin-right: 0.1em;
+}
+
+nav ul {
+    font-size: 0.75rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    list-style-type: none;
+}
+
+nav button {
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    border: none;
+    font-family: inherit;
+    font-weight: bold;
+    color: #000;
+    background-color: transparent;
+}
+
+nav button:active {
+    background-color: #0001;
+    transform: scale(0.5);
+    transition: transform 0.5s;
+}
+
+.blog-img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+}
+
+.hero .blog-img {
+    height: 100%;
+}
+
+.blog-preview.hero {
+    position: relative;
+    height: 50vh;
+}
+
+.blog-preview.hero .preview-text-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(transparent, #0004 40%, #0007);
+    color: white;
+    text-shadow: 0 0 5px #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    line-height: 1.5;
+    padding-top: 1.25em;
+    padding-bottom: 1.25em;
+}
+
+.clamp-line {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    display: box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.clamp-line-num-2 {
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+}
+
+.clamp-line-num-3 {
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+}
+
+.blog-preview.hero h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 1.1;
+    margin: 0.25em 0;
+}
+
+.blog-preview.hero .date {
+    font-size: 0.75rem;
+}
+
+.blog-preview.normal {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 2.125em;
+    padding-bottom: 2.125em;
+    gap: 0.875em;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.blog-preview.normal .date {
+    font-size: 0.875rem;
+    padding-top: 1em;
+}
+
+.blog-preview.normal h1 {
+    font-size: 1.5rem;
+    line-height: 1.1;
+    margin-top: 0.375em;
+}
+
+.blog-preview.normal .text {
+    margin-top: 0.5625em;
+    color: #505050;
+}
+
+.blog-preview.normal .preview-card {
+    background-color: #fff;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.blog-preview.normal .preview-text-container {
+    padding: 0.5em;
+}
+
+.preview-card {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #000;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    text-align: left;
+}
+
+.view-more {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    font-family: inherit;
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    font-weight: 900;
+    color: #000;
+    text-decoration: underline;
+    padding: 0.5em 1em;
+}
+
+nav button:active,
+.view-more:active {
+    transform: scale(0.95);
+    transition: transform 0.2s;
+}
+
+.blog-container {
+    margin-top: 1em;
+    padding-top: 1em;
+}
+
+.blog-container h1,
+.blog-container h2,
+.blog-container h3,
+.main.about h1,
+.main.about h2,
+.main.about h3 {
+    line-height: 1.1;
+    margin: 2em 0 1em 0;
+}
+
+.blog-container h1,
+.main.about h1 {
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.blog-container h2,
+.main.about h2 {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.blog-container h3,
+.main.about h3 {
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.blog-container .blog-img {
+    margin: 2em 0;
+}
+
+.recent-posts h2 {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.main.about .header {
+    margin-top: 2em;
+    margin-bottom: 3em;
+}
+
+.main.about .header img {
+    width: 185px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #0007;
+}
+
+.main.about h1 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .page-x-padding {
+        padding-left: 53px;
+        padding-right: 53px;
+    }
+
+    .header-container {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .logo {
+        font-size: 1.25rem;
+    }
+
+    .logo img {
+        width: 34px;
+        height: 34px;
+    }
+
+    nav ul {
+        font-size: 1rem;
+    }
+
+    .blog-preview.hero .preview-text-container {
+        background: linear-gradient(
+            transparent,
+            rgba(0, 0, 0, 0.4) 70%,
+            rgba(0, 0, 0, 0.7)
+        );
+        padding-bottom: 3.75em;
+        padding-right: 50%;
+    }
+
+    .blog-preview.hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .blog-preview.hero .date {
+        font-size: 1rem;
+    }
+
+    .blog-preview.normal {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .preview-card:hover {
+        cursor: pointer;
+    }
+
+    .blog-preview.normal .preview-card:hover {
+        transform: scale(1.2);
+        transition: transform 0.5s;
+        box-shadow: 0 0 10px #000;
+        z-index: 1;
+    }
+
+    .blog-preview.normal .preview-card:active {
+        transform: scale(1.15);
+        transition: transform 0.5s;
+    }
+
+    nav button:hover,
+    .view-more:hover {
+        cursor: pointer;
+        background-color: #0001;
+    }
+
+    .blog-container h1,
+    .blog-container h2,
+    .blog-container h3 {
+        margin: 2em 0 1em 0;
+    }
+
+    .blog-container h1 {
+        font-size: 2.25rem;
+    }
+
+    .blog-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .blog-container h3 {
+        font-size: 1rem;
+    }
+
+    .main.about .header {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 3em;
+    }
+}
