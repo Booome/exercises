@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="index.css" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        />
+    </head>
+
+    <body class="dark">
+        <div class="container">
+            <button id="theme-switch" aria-label="theme switch">
+                <i class="icon dark material-icons">light_mode</i>
+                <i class="icon light material-icons">dark_mode</i>
+            </button>
+
+            <div class="home">
+                <div class="page">
+                    <header class="page_header">
+                        <h1>Find your film</h1>
+                        <nav>
+                            <button class="to-watchlist-button">
+                                My Watchlist
+                            </button>
+                        </nav>
+                    </header>
+                    <main class="page_main">
+                        <form id="search-form" class="search-bar">
+                            <i class="material-icons">search</i>
+                            <input type="text" name="search" required />
+                            <button type="submit">Search</button>
+                        </form>
+                        <div class="movie-list"></div>
+                    </main>
+                </div>
+            </div>
+
+            <div class="watchlist hidden">
+                <div class="page">
+                    <header class="page_header">
+                        <h1>My Watchlist</h1>
+                        <nav>
+                            <button class="to-home-button">
+                                Search form movies
+                            </button>
+                        </nav>
+                    </header>
+                    <main class="page_main">
+                        <div class="movie-list"></div>
+                    </main>
+                </div>
+            </div>
+        </div>
+
+        <script src="index.js" type="module"></script>
+    </body>
+</html>
