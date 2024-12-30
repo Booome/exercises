@@ -1,0 +1,41 @@
+.statusSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    height: 59px;
+    width: 352px;
+    background-color: #7e5ea7;
+    color: #f9f4da;
+    font-size: 1rem;
+    line-height: 1.303;
+    border-radius: 0.25em;
+    border: 1px dashed #282726;
+    font-style: italic;
+}
+
+.statusSection h2 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.303;
+    font-style: normal;
+}
+
+.statusSection.won {
+    background-color: #10a95b;
+    border: none;
+    font-style: normal;
+}
+
+.statusSection.lost {
+    background-color: #ba2a2a;
+    border: none;
+    font-style: normal;
+}
+
+.statusSection.hidden {
+    background-color: transparent;
+    border: none;
+}

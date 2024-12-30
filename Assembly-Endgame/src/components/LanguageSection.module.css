@@ -1,0 +1,30 @@
+.languageSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2px;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 36px;
+}
+
+.languageChip {
+    font-size: 0.75rem;
+    line-height: 1.303em;
+    padding: 0.5em 1em;
+    border-radius: 0.25em;
+    position: relative;
+}
+
+.languageChip.wrongGuess::before {
+    content: "💀";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0008;
+}

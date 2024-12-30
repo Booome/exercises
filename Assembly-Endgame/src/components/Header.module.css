@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.875rem;
+    line-height: 1.3029;
+    font-weight: 500;
+    gap: 4px;
+    margin: 0 121px;
+}
+
+.title {
+    color: #f9f4da;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
