@@ -1,0 +1,44 @@
+.card {
+    background-color: #f9fafb;
+    color: #6b7280;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    line-height: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 384px;
+    height: 208px;
+    padding: 3.5em 1.5em 2em 1.5em;
+    position: relative;
+    gap: 1.25em;
+    border-radius: 0.5em;
+}
+
+.card svg {
+    background-color: #3f75fe;
+    color: #ffffff;
+    width: 48px;
+    height: 48px;
+    border-radius: 0.375em;
+    padding: 0.875em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transform: translateY(-50%);
+    box-shadow: 0 4px 6px -2px #00000010, 0 10px 15px -3px #00000020;
+}
+
+.cardTitle {
+    font-weight: 500;
+    font-size: 1.125em;
+    line-height: 1.556em;
+    color: #111827;
+}
+
+.card:hover {
+    box-shadow: 0 4px 25px 0 #00000010;
+}
